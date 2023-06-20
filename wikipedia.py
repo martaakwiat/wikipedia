@@ -7,7 +7,7 @@ from time import sleep
 
 user_name = "MartaKwiat1989"
 incorrect_password = "qwt123K!"
-correct_password = "martaK1989"
+correct_password = "wsb1@!KqZ"
 
 class FirstTest(unittest.TestCase):
     def setUp(self):
