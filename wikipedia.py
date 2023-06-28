@@ -47,8 +47,9 @@ class FirstTest(unittest.TestCase):
         self.assertEqual(1, len(user_error_message))
         #Sprawdzam, czy treść komunikatu jest widoczna i brzmi "Podany login lub hasło są nieprawidłowe. Spróbuj jeszcze raz."
         self.assertEqual("Podany login lub hasło są nieprawidłowe. Spróbuj jeszcze raz.", user_error_message[0].text)
-
         
+        sleep(3)
+
     def test_no_password(self):
         #kliknij "zaloguj się"
         login_link = self.driver.find_element(By.PARTIAL_LINK_TEXT, "Zaloguj się")
@@ -81,9 +82,8 @@ class FirstTest(unittest.TestCase):
         login_element = self.driver.find_element(By.PARTIAL_LINK_TEXT, "Zaloguj się") 
         
         self.assertTrue(login_element)
-        
-        
 
+        sleep(3)
         
     def test_correct_login(self):
 
